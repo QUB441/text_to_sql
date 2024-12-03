@@ -1,0 +1,17 @@
+{"time":"2024-12-03T17:51:23.4548165Z","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-12-03T17:51:23.4548165Z","level":"INFO","msg":"created symlink","path":"c:\\py_crack\\MLX_wk8\\wandb\\run-20241203_175123-b5cawdaz\\logs\\debug-core.log"}
+{"time":"2024-12-03T17:51:23.8628552Z","level":"INFO","msg":"created new stream","id":"b5cawdaz"}
+{"time":"2024-12-03T17:51:23.8628552Z","level":"INFO","msg":"stream: started","id":"b5cawdaz"}
+{"time":"2024-12-03T17:51:23.8628552Z","level":"INFO","msg":"handler: started","stream_id":{"value":"b5cawdaz"}}
+{"time":"2024-12-03T17:51:23.8628552Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"b5cawdaz"}}
+{"time":"2024-12-03T17:51:23.8628552Z","level":"INFO","msg":"sender: started","stream_id":"b5cawdaz"}
+{"time":"2024-12-03T17:51:25.3255136Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-03T17:51:45.6841563Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-03T17:51:45.6848162Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-03T17:51:46.6979559Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.8189998}],"total_operations":1}}
+{"time":"2024-12-03T17:51:46.7496446Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-03T17:51:48.0368416Z","level":"INFO","msg":"stream: closing","id":"b5cawdaz"}
+{"time":"2024-12-03T17:51:48.0368416Z","level":"INFO","msg":"handler: closed","stream_id":{"value":"b5cawdaz"}}
+{"time":"2024-12-03T17:51:48.0368416Z","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"b5cawdaz"}}
+{"time":"2024-12-03T17:51:48.0368416Z","level":"INFO","msg":"sender: closed","stream_id":"b5cawdaz"}
+{"time":"2024-12-03T17:51:48.0374069Z","level":"INFO","msg":"stream: closed","id":"b5cawdaz"}

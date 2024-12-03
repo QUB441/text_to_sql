@@ -1,0 +1,31 @@
+{
+  "os": "Windows-11-10.0.22631-SP0",
+  "python": "3.12.7",
+  "startedAt": "2024-12-03T17:26:04.907851Z",
+  "program": "c:\\py_crack\\MLX_wk8\\text_sql.ipynb",
+  "git": {
+    "remote": "https://github.com/QUB441/text_to_sql.git",
+    "commit": "f8cf03b38898e3019626390da53aa613f85dfbe1"
+  },
+  "email": "liquid.candidate@gmail.com",
+  "root": "c:\\py_crack\\MLX_wk8",
+  "host": "C11-NUOHPZFMP72",
+  "username": "barbora.filova",
+  "executable": "c:\\Users\\barbora.filova\\AppData\\Local\\anaconda3\\envs\\pytorch\\python.exe",
+  "codePathLocal": "text_sql.ipynb",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "506333229056",
+      "used": "412761784320"
+    }
+  },
+  "memory": {
+    "total": "34074976256"
+  },
+  "cpu": {
+    "count": 4,
+    "countLogical": 8
+  }
+}

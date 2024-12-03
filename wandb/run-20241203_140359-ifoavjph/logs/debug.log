@@ -25,3 +25,13 @@ config: {'epochs': 10, 'batch_size': 8, 'learning_rate': 5e-05, 'max_length': 51
 2024-12-03 14:04:00,477 INFO    MainThread:10308 [wandb_run.py:_redirect():2376] Wrapping output streams.
 2024-12-03 14:04:00,478 INFO    MainThread:10308 [wandb_run.py:_redirect():2401] Redirects installed.
 2024-12-03 14:04:00,479 INFO    MainThread:10308 [wandb_init.py:init():911] run started, returning control to user process
+2024-12-03 15:29:19,063 INFO    MainThread:10308 [wandb_run.py:_finish():2158] finishing run liquid-candidate-personal/text-to-sql/ifoavjph
+2024-12-03 15:29:19,157 INFO    MainThread:10308 [jupyter.py:save_history():459] not saving jupyter history
+2024-12-03 15:29:19,157 INFO    MainThread:10308 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-12-03 15:29:19,157 INFO    MainThread:10308 [wandb_init.py:_jupyter_teardown():462] cleaning up jupyter logic
+2024-12-03 15:29:19,173 INFO    MainThread:10308 [wandb_run.py:_atexit_cleanup():2426] got exitcode: 0
+2024-12-03 15:29:19,189 INFO    MainThread:10308 [wandb_run.py:_restore():2408] restore
+2024-12-03 15:29:19,189 INFO    MainThread:10308 [wandb_run.py:_restore():2414] restore done
+2024-12-03 15:29:21,880 INFO    MainThread:10308 [wandb_run.py:_footer_history_summary_info():3975] rendering history
+2024-12-03 15:29:21,903 INFO    MainThread:10308 [wandb_run.py:_footer_history_summary_info():4007] rendering summary
+2024-12-03 15:29:22,179 INFO    MainThread:10308 [wandb_run.py:_footer_sync_info():3934] logging synced files
