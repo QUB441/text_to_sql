@@ -1,0 +1,85 @@
+import streamlit as st
+import torch
+#from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+
+
+# Load the saved model and tokenizer
+model_path = "trained_model"
+tokenizer_path = "trained_tokenizer"
+
+# model = AutoModelForCausalLM.from_pretrained(model_path)
+# tokenizer = AutoTokenizer.from_pretrained(tokenizer_path)
+
+# Load the model and tokenizer
+model = AutoModelForSeq2SeqLM.from_pretrained("model_path")
+tokenizer = AutoTokenizer.from_pretrained("tokenizer_path")
+
+st.title("Query-Response App")
+
+# Input box for user query
+query = st.text_input("Enter your query:", "")
+
+
+def test_inference(question, model, tokenizer, device):
+    """
+    Run inference on a single question to generate an SQL query.
+
+    Args:
+    - question (str): The natural language question.
+    - model (T5ForConditionalGeneration): The fine-tuned T5 model.
+    - tokenizer (T5Tokenizer): The T5 tokenizer.
+    - device (torch.device): The device to run the model on.
+
+    Returns:
+    - str: The generated SQL query.
+    """
+    # Add the task prefix
+    #input_text = f"translate natural language to SQL: {question}"
+    input_text = question
+
+    # Tokenize the input
+    input_ids = tokenizer(
+        input_text,
+        return_tensors="pt",
+        padding=True,
+        truncation=True,
+        max_length=512,
+    ).input_ids.to(device)
+    
+    print("Tokenized input text:", tokenizer.convert_ids_to_tokens(input_ids[0]))
+    print("Input ids:", input_ids)
+    print(type(input_ids))
+    # Ensure model is in eval mode
+    model.eval()
+
+    # Generate SQL query
+    outputs = model.generate(input_ids, max_length=128, num_beams=5, early_stopping=True)
+    
+    print("Generated output tensor:", outputs)
+
+    # Decode the output tokens
+    sql_query = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    print("Decoded SQL query:", sql_query)
+
+    return sql_query
+
+
+
+if st.button("Get Response"):
+    if query.strip():
+        # # Tokenize input
+        # inputs = tokenizer(query, return_tensors="pt")
+
+        # # Generate response
+        # outputs = model.generate(**inputs, max_length=50, num_return_sequences=1)
+
+        # # Decode and display the response
+        # response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+        # Move Model to GPU if Available
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        response = test_inference(query, model, tokenizer, device)
+        st.write("Response:", response)
+    else:
+        st.write("Please enter a query!")
+
