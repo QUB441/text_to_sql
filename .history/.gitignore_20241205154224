@@ -1,0 +1,8 @@
+<<<<<<< HEAD
+*.log
+wandb/
+=======
+*.wandb
+*.log*.wandb
+*.log
+>>>>>>> 068bc39ae0a69dbaca6ffec65e5fffd7a81d7a8c
