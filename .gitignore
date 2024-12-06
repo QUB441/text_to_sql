@@ -1,0 +1,4 @@
+*.log
+wandb/
+trained_models/
+trained_tokenizers/

@@ -1,0 +1,2 @@
+{'query': 'how many students over 30 years', 'response': 'SELECT count(*) FROM Student WHERE age > 30', 'rating': 'Thumbs Up', 'timestamp': '2024-12-05 15:16:45'}
+{'query': 'how many students over 30 years', 'response': 'SELECT count(*) FROM Student WHERE age > 30', 'rating': 'Thumbs Down', 'timestamp': '2024-12-05 15:17:03'}
