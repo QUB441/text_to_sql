@@ -2,3 +2,4 @@
 wandb/
 trained_models/
 trained_tokenizers/
+.ppt
